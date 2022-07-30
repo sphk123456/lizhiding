@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>平安成电智慧通行</title>
+		<link href="amazeui.min.css" rel="stylesheet" />
+		<style>
+			.container0 
+			{
+				font-family: "Microsoft YaHei";
+				padding-left: 30px;
+				padding-right: 30px;
+				padding-bottom: 20px;
+			}
+			.container2
+			{
+				font-family: "Microsoft YaHei";
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			.container3
+			{
+				font-family: "Microsoft YaHei";
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			h1
+			{
+				color: #147D14;
+				font-size: 63px;
+			}
+			.btndiv
+			{
+				text-align: center; 
+			}
+			.btn
+			{
+				text-align: center; 
+				background-color: #0CC4A7;
+				border-color: #0CC4A7;
+				color: #FFFFFF;
+				font-size: 35px;
+				width: 37%;	
+				height: 88px;
+				border-radius: 4px;
+				box-shadow: #0CC4A7 0px 0px 2px 2px;
+			}
+			.logodiv
+			{
+				text-align: center;
+			}
+			.wenbendiv
+			{
+				padding-bottom: 50px;
+				padding-top: 10px;
+				vertical-align: middle;
+				box-sizing: border-box;
+				display: block; 
+
+			}
+			.rowimgspan
+			{
+				display: inline-block;
+    			box-sizing: border-box;
+    			vertical-align: middle;
+			}
+			.rowleftspan
+			{
+				font-size: 40px;
+				height: 50px;
+				display: inline-block;
+    			box-sizing: border-box;
+    			vertical-align: middle;
+				margin-top: -12px;
+
+				margin-left: 10px;
+			}
+			.rowrightspan
+			{
+				font-size: 60px;
+				height: 50px;
+				float:right;
+				display: inline-block;
+    			box-sizing: border-box;
+    			vertical-align: middle;
+			}
+			.apptitlediv
+			{
+				height: 80px;
+				font-size: 42px;
+				text-align: center; 
+				padding-top: 20px;
+				padding-bottom: 20px;
+
+				box-sizing: border-box;
+				display: block; 
+			}
+			.container1
+			{
+				
+				height: 120px;
+				font-family: "Microsoft YaHei";
+				font-size: 33px;
+
+				width: 100%;
+				position: absolute;
+				float: top;
+			}
+			.blackbg
+			{
+				padding-top: 40px;
+				height: 120px;
+				background-color: #2D2A2E;
+			}
+			
+			.container1 .leftspan
+			{
+				color: #FFFFFF;
+				
+			}
+			.container1 .rightspan
+			{
+				color: #2EC196;
+				
+				float: right;
+			}
+			.blackbg
+			{
+				padding-left: 30px;
+				padding-right: 30px;
+			}
+			.imgleft
+			{
+				float:left;
+				display: inline-block;
+    			box-sizing: border-box;
+    			vertical-align: middle;
+			}
+			.title
+			{
+				display: inline-block;
+    			box-sizing: border-box;
+    			vertical-align: middle;
+			}
+			.imgright
+			{
+				float:right;
+				display: inline-block;
+    			box-sizing: border-box;
+    			vertical-align: middle;
+			}
+			
+			/* 滚动 */
+			.box {
+				width: 400px;
+				color: #0CC4A7;
+				height: 70px;
+				margin: 0 auto;
+				border: 0px solid #ff6700;
+				overflow: hidden;
+        	}
+ 
+        	.animate {
+				display: inline-block;
+				white-space: nowrap;
+				animation: 6s wordsLoop linear infinite normal;
+        	}
+ 
+			@keyframes wordsLoop {
+				0% {
+					transform: translateX(0px);
+					-webkit-transform: translateX(0px);
+				}
+				100% {
+					transform: translateX(-100%);
+					-webkit-transform: translateX(-100%);
+				}
+			}
+	
+			@-webkit-keyframes wordsLoop {
+				0% {
+					transform: translateX(0px);
+					-webkit-transform: translateX(0px);
+				}
+				100% {
+					transform: translateX(-100%);
+					-webkit-transform: translateX(-100%);
+				}
+			}
+
+			@-webkit-keyframes fadeOut {
+
+			0% {
+
+				opacity: 1; /*初始状态 透明度为0*/
+				transform: translateY(0px);
+				-webkit-transform: translateY(0px);
+
+			}
+
+			/* 50% {
+
+				opacity: 0.5; 
+				transform: translateY(-50%);
+				-webkit-transform: translateY(-50%);
+
+			} */
+
+			100% {
+
+				opacity: 0; /*结尾状态 透明度为1*/
+				transform: translateY(-100%);
+				-webkit-transform: translateY(-100%);
+
+			}
+
+			}
+			.blackbg{
+
+				-webkit-animation-name: fadeOut; /*动画名称*/
+
+				-webkit-animation-duration: 2s; /*动画持续时间*/
+
+				-webkit-animation-iteration-count: 1; /*动画次数*/
+
+				-webkit-animation-delay: 2s; /*延迟时间*/
+
+			}
+			#container1
+			{
+				overflow: hidden;
+			}
+
+			.h
+			{
+				height: 7px;
+			}
+			
+		</style>
+	</head>
+
+	<body>
+		<div class="container0" >
+			<div class="apptitlediv">
+				<span class="imgleft"><img src="close.png" height="60" width="60" alt=""></span>
+				<span class="title"><strong>平安成电智慧通行</strong></span>
+				<span class="imgright"><img src="dots-horizontal.png" height="60" width="60" alt=""></span>
+			</div>
+		</div>
+		<div class="container1" id="container1">
+			<div class="blackbg">
+				<span class="leftspan">研究生用户，出校登记成功！</span>
+				
+				<span class="rightspan">关闭</span>
+				
+			</div>
+		</div>
+		<br><br><br><br><br><br>
+		<div class="h"></div>
+
+		<div  class="container2">
+			<h1>研究生用户，出校登记成功！</h1>
+			<br>
+			<br>
+			<br>
+		</div>
+		<hr>
+		<div class="container3">
+			<div class="wenbendiv">
+				<span class="rowimgspan"><img src="account.png" height="60" width="60" alt=""></span>
+				<span class="rowleftspan">用户姓名</span>
+				<span class="rowrightspan"><strong>吕志方</strong> </span>
+			</div>
+			
+			<div class="wenbendiv">
+				<span class="rowimgspan"><img src="account-multiple.png" height="60" width="60" alt=""></span>
+				<span class="rowleftspan">登记类型</span>
+				<span class="rowrightspan"><strong>研究生（博士）</strong></span>
+			</div>
+			
+			<div class="wenbendiv">
+				<span class="rowimgspan"><img src="alarm-check.png" height="60" width="60" alt=""></span>
+				<span class="rowleftspan">登记时间</span>
+				<span class="rowrightspan box"><strong class="animate" id="time"></strong></span>
+				<!-- 2021-11-10 12:37:45 -->
+			</div>
+
+			<br>
+			
+			
+			<div class="btndiv"><button class="btn" onclick="toQrcodeHtml()" >前往个人二维码</button></div>
+			<br>
+			<br>
+			<br>
+			<div class="logodiv" ><img src="schoollogo.png" height="120" width="120" alt=""></div>
+			
+			
+		</div>
+		
+
+
+
+		<script src="jquery-3.1.0.min.js"></script>
+		<script>
+
+   
+
+			$(document).ready(function(){
+							console.log(getFormatDate());
+							$("#time").text(getFormatDate())
+						});
+			function getFormatDate(){
+				var nowDate = new Date();
+				var year = nowDate.getFullYear();
+				var month = nowDate.getMonth() + 1 < 10 ? "0" + (nowDate.getMonth() + 1) : nowDate.getMonth() + 1;
+				var date = nowDate.getDate() < 10 ? "0" + nowDate.getDate() : nowDate.getDate();
+				var hour = nowDate.getHours()< 10 ? "0" + nowDate.getHours() : nowDate.getHours();
+				var minute = nowDate.getMinutes()< 10 ? "0" + nowDate.getMinutes() : nowDate.getMinutes();
+				var second = nowDate.getSeconds()< 10 ? "0" + nowDate.getSeconds() : nowDate.getSeconds();
+				return year + "-" + month + "-" + date+" "+hour+":"+minute+":"+second;
+			}
+
+			function toQrcodeHtml()
+			{
+				window.location.href="qrcode.html"
+			}
+
+			var t = 2;
+			function fun() {
+				if(t == 0) {
+					$("#container1").remove();
+					clearInterval(inter);
+				}
+				console.log(t);
+				t--;
+			}
+			var inter = setInterval("fun()", 1000);
+
+		</script>
+	</body>
+</html>

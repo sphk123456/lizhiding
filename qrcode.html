@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>平安成电智慧通行</title>
+		<style>
+			.container0 
+			{
+				font-family: "Microsoft YaHei";
+				padding-left: 30px;
+				padding-right: 30px;
+				padding-bottom: 20px;
+			}
+			
+			.apptitlediv
+			{
+				height: 80px;
+				font-size: 42px;
+				text-align: center; 
+				padding-top: 20px;
+				padding-bottom: 20px;
+
+				box-sizing: border-box;
+				display: block; 
+			}
+			
+			.imgleft
+			{
+				float:left;
+				display: inline-block;
+    			box-sizing: border-box;
+    			vertical-align: middle;
+			}
+			.title
+			{
+				display: inline-block;
+    			box-sizing: border-box;
+    			vertical-align: middle;
+			}
+			.imgright
+			{
+				float:right;
+				display: inline-block;
+    			box-sizing: border-box;
+    			vertical-align: middle;
+			}
+			
+
+
+			.container6 
+			{
+				font-family: "Microsoft YaHei";
+				padding-left: 25px;
+				padding-right: 25px;
+				padding-bottom: 40px;
+
+				margin-left: 25px;
+				margin-right: 25px;
+
+				text-align: center;
+
+				border: 2px solid rgb(199, 195, 195);
+				border-radius: 5px;
+				box-shadow: rgb(199, 195, 195) 0px 0px 3px 3px;
+			}
+			.row1
+			{
+				font-size: 53px;
+			}
+			.btndiv
+			{
+				text-align: center; 
+			}
+			.btn
+			{
+				text-align: center; 
+				background-color: #0CC4A7;
+				border-color: #0CC4A7;
+				color: #FFFFFF;
+				font-size: 35px;
+				width: 37%;	
+				height: 88px;
+				
+				border-radius: 4px;
+				box-shadow: #0CC4A7 0px 0px 2px 2px;
+			}
+			.row3
+			{
+				font-size: 38px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="container0">
+			<div class="apptitlediv">
+				<span class="imgleft"><img src="close.png" height="60" width="60" alt=""></span>
+				<span class="title"><strong>平安成电智慧通行</strong></span>
+				<span class="imgright"><img src="dots-horizontal.png" height="60" width="60" alt=""></span>
+			</div>
+		</div>
+
+
+		<br>
+		<br>
+		<div class="container6">
+			<br>
+			<div class="row1"><strong>行人二维码</strong></div>
+			<br>
+			<div  class="row2">
+				<img src="qrcode.png" height="520" width="520" alt="">
+			</div>
+			<div class="row3">二维码剩余有效时间<span class="clock"></span>秒</div>
+			<br>
+			<div class="btndiv"><button class="btn" onclick="toRuleHtml()">查看通行规则</button></div>
+		</div>
+			
+			
+		
+		<script src="jquery-3.1.0.min.js"></script>
+		<script>
+
+		
+		 	var t = 300;
+			var time = document.getElementsByClassName("clock")[0];
+			function fun() {
+				
+				time.innerHTML = t;
+				if(t <= 0) {
+					// 停止该函数
+					clearInterval(inter);
+				}
+				if(t == 297) {
+					$("#container1").remove();
+				}
+				t--;
+
+				
+			}
+			var inter = setInterval("fun()", 1000);
+			
+			function toRuleHtml()
+			{
+				window.location.href="passRule.html"
+			}
+
+		</script>
+	</body>
+</html>
